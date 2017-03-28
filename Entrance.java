@@ -3,28 +3,30 @@
  *  Nama file : Entrance.java
  */
 
-import java.util.*;
 import java.lang.*;
+import java.util.*;
 
-public class Entrance extends Road{
-   /**
-   * Constructor
+public class Entrance extends Road {
+  /**
+   * Constructor.
    */
-  public Entrance(){
+  public Entrance() {
     super();
   }
+  
   /**
-   * Mengembalikan karakter untuk ditampilkan ke layar
+   * Mengembalikan karakter untuk ditampilkan ke layar.
    * @return id bertipe char
    */
-  public char render(){
+  public char render() {
     return 'i';
   }
+  
   /**
-   * Mengembalikan warna untuk ditampilkan ke layar
+   * Mengembalikan warna untuk ditampilkan ke layar.
    * @return color warna renderable
    */
-  public String renderWithColor(){
+  public String renderWithColor() {
     return ANSI_WHITE + render() + ANSI_RESET;
   }
 }

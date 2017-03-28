@@ -1,10 +1,10 @@
 /* NIM/Nama : 13515087 / Audry Nyonata */
 /* File : Facility.java */
 
-import java.util.*;
 import java.lang.*;
+import java.util.*;
 
-abstract public class Facility extends Cell {
+public abstract class Facility extends Cell {
   /**
    * Constructor.
    */
