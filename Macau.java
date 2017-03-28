@@ -3,41 +3,41 @@
  *  Nama file : Macau.java
  */
 
-import java.util.*;
 import java.lang.*;
+import java.util.*;
 
 public class Macau extends Animal implements FlyingAnimal, Omnivore, Aves {
   /**
-   * Constructor
+   * Constructor.
    */
   public Macau() {
     super();
   }
 
   /**
-   * Constructor dengan parameter
-   * @param _name nama hewan
-   * @param _weight berat hewan
-   * @param _s jenis kelamin hewan (MALE/FEMALE)
-   * @param _r posisi hewan (baris)
-   * @param _c posisi hewan (kolom)
+   * Constructor dengan parameter.
+   * @param parName nama hewan
+   * @param parWeight berat hewan
+   * @param parSex jenis kelamin hewan (MALE/FEMALE)
+   * @param parRow posisi hewan (baris)
+   * @param parCol posisi hewan (kolom)
    */
-  public Macau(String _name, double _weight, Sex _s, int _r, int _c) {
-    super(_name, _weight, _s, _r, _c);
+  public Macau(String parName, double parWeight, Sex parSex, int parRow, int parCol) {
+    super(parName, parWeight, parSex, parRow, parCol);
   }
 
   /**
-   * Melakukan clone hewan
+   * Melakukan clone hewan.
    * @return hewan yang ingin diduplikasi
    */
   @Override
   public Macau clone() {
     Macau out = new Macau(name,weight,sex,row,col);
-      return out;
+    return out;
   }
 
   /**
-   * Menampilkan interaksi hewan
+   * Menampilkan interaksi hewan.
    */
   @Override
   public void interact() {
@@ -45,7 +45,7 @@ public class Macau extends Animal implements FlyingAnimal, Omnivore, Aves {
   }
 
   /**
-   * Mengembalikan karakter dari binatang untuk ditampilkan
+   * Mengembalikan karakter dari binatang untuk ditampilkan.
    * @return karakter dari binatang
    */
   @Override
@@ -54,7 +54,7 @@ public class Macau extends Animal implements FlyingAnimal, Omnivore, Aves {
   }
 
   /**
-   * Mengembalikan string berisi kode warna dan karakter dari binatang untuk ditampilkan
+   * Mengembalikan string berisi kode warna dan karakter dari binatang untuk ditampilkan.
    * @return kode warna dan karakter binatang
    */
   @Override
@@ -63,7 +63,7 @@ public class Macau extends Animal implements FlyingAnimal, Omnivore, Aves {
   }
 
   /**
-   * Mengembalikan liar/tidaknya binatang
+   * Mengembalikan liar/tidaknya binatang.
    * @return true jika liar, false jika jinak
    */
   @Override
@@ -71,13 +71,17 @@ public class Macau extends Animal implements FlyingAnimal, Omnivore, Aves {
     return false;
   }
 
+  /**
+   * Mengembalikan jumlah ruang jantung hewan.
+   * @return jumlah ruang jantung hewan
+   */
   @Override
   public int getHeartChamber() {
     return 2;
   }
 
- /**
-   * Mengembalikan jenis darah hewan ('h'/'c')
+  /**
+   * Mengembalikan jenis darah hewan ('h'/'c').
    * @return jenis darah hewan ('h'/'c')
    */
   @Override
@@ -86,7 +90,7 @@ public class Macau extends Animal implements FlyingAnimal, Omnivore, Aves {
   }
 
   /**
-   * Mengembalikan jumlah ratio sayur yang dibutuhkan terhadap berat hewan
+   * Mengembalikan jumlah ratio sayur yang dibutuhkan terhadap berat hewan.
    * @return ratio sayur yang dibutuhkan hewan
    */
   @Override
@@ -95,7 +99,7 @@ public class Macau extends Animal implements FlyingAnimal, Omnivore, Aves {
   }
 
   /**
-   * Mengembalikan jumlah ratio daging yang dibutuhkan terhadap berat hewan
+   * Mengembalikan jumlah ratio daging yang dibutuhkan terhadap berat hewan.
    * @return ratio sayur yang dibutuhkan hewan
    */
   @Override
@@ -104,21 +108,21 @@ public class Macau extends Animal implements FlyingAnimal, Omnivore, Aves {
   }
 
   /**
-   * Mengembalikan jumlah sayur yang dikonsumsi
+   * Mengembalikan jumlah sayur yang dikonsumsi.
    * @return jumlah sayur yang dikonsumsi
    */
   @Override
   public double countConsumedVeggie() {
-    return weight*getVegRatio();
+    return weight * getVegRatio();
   }
 
   /**
-   * Mengembalikan jumlah daging yang dikonsumsi
+   * Mengembalikan jumlah daging yang dikonsumsi.
    * @return jumlah daging yang dikonsumsi
    */
   @Override
   public double countConsumedMeat() {
-    return weight*getMeatRatio();
+    return weight * getMeatRatio();
   }
 
   /**
@@ -140,7 +144,7 @@ public class Macau extends Animal implements FlyingAnimal, Omnivore, Aves {
   }
 
   /**
-   * Mencetak tulisan yang merepresentasi objek pengimplemen sedang terbang
+   * Mencetak tulisan yang merepresentasi objek pengimplemen sedang terbang.
    */
   @Override
   public void fly() {

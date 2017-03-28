@@ -3,31 +3,31 @@
  * File : Hippopotamus.java
  */
 
-import java.util.*;
 import java.lang.*;
+import java.util.*;
 
 public class Hippopotamus extends Animal implements LandAnimal, WaterAnimal, Herbivore, Mammalia {
   /**
-   * Constructor
+   * Constructor.
    */
   public Hippopotamus() {
     super();
   }
 
   /**
-   * Consructor dengan parameter
-   * @param _name nama binatang
-   * @param _weight berat
-   * @param _s jenis kelamin
-   * @param _r posisi hewan (baris)
-   * @param _c posisi hewan (kolom)
+   * Consructor dengan parameter.
+   * @param parName nama binatang
+   * @param parWeight berat
+   * @param parSex jenis kelamin
+   * @param parRow posisi hewan (baris)
+   * @param parCol posisi hewan (kolom)
    */
-  public Hippopotamus(String _name, double _weight, Sex _s, int _r, int _c) {
-    super(_name,  _weight, _s,  _r, _c);
+  public Hippopotamus(String parName, double parWeight, Sex parSex, int parRow, int parCol) {
+    super(parName,  parWeight, parSex,  parRow, parCol);
   }
 
   /**
-   * Melakukan clone hewan
+   * Melakukan clone hewan.
    * @return hewan yang ingin diduplikasi
    */
   @Override
@@ -36,7 +36,7 @@ public class Hippopotamus extends Animal implements LandAnimal, WaterAnimal, Her
   }
 
   /**
-   * Menampilkan interaksi hewan ke layar
+   * Menampilkan interaksi hewan ke layar.
    */
   @Override
   public void interact() {
@@ -44,7 +44,7 @@ public class Hippopotamus extends Animal implements LandAnimal, WaterAnimal, Her
   }
 
   /**
-   * Mengembalikan karakter id tiap hewan
+   * Mengembalikan karakter id tiap hewan.
    * @return karakter tiap hewan
    */
   @Override
@@ -53,7 +53,7 @@ public class Hippopotamus extends Animal implements LandAnimal, WaterAnimal, Her
   }
 
   /**
-   * Mengembalikan warna dari hewan
+   * Mengembalikan warna dari hewan.
    * @return warna cetak hewan
    */
   @Override
@@ -62,7 +62,7 @@ public class Hippopotamus extends Animal implements LandAnimal, WaterAnimal, Her
   }
 
   /**
-   * Mengembalikan liar/tidaknya binatang
+   * Mengembalikan liar/tidaknya binatang.
    * @return true jika liar, false jika jinak
    */
   @Override
@@ -70,13 +70,17 @@ public class Hippopotamus extends Animal implements LandAnimal, WaterAnimal, Her
     return true;
   }
 
+  /**
+   * Mengembalikan jumlah ruang jantung hewan.
+   * @return jumlah ruang jantung hewan
+   */
   @Override
   public int getHeartChamber() {
     return 4;
   }
 
- /**
-   * Mengembalikan jenis darah hewan ('h'/'c')
+  /**
+   * Mengembalikan jenis darah hewan ('h'/'c').
    * @return jenis darah hewan ('h'/'c')
    */
   @Override
@@ -85,7 +89,7 @@ public class Hippopotamus extends Animal implements LandAnimal, WaterAnimal, Her
   }
 
   /**
-   * Mengembalikan jumlah ratio sayur yang dibutuhkan terhadap berat hewan
+   * Mengembalikan jumlah ratio sayur yang dibutuhkan terhadap berat hewan.
    * @return ratio sayur yang dibutuhkan hewan
    */
   @Override
@@ -94,7 +98,7 @@ public class Hippopotamus extends Animal implements LandAnimal, WaterAnimal, Her
   }
 
   /**
-   * Mengembalikan jumlah ratio daging yang dibutuhkan terhadap berat hewan
+   * Mengembalikan jumlah ratio daging yang dibutuhkan terhadap berat hewan.
    * @return ratio sayur yang dibutuhkan hewan
    */
   @Override
@@ -103,21 +107,21 @@ public class Hippopotamus extends Animal implements LandAnimal, WaterAnimal, Her
   }
 
   /**
-   * Mengembalikan jumlah sayur yang dikonsumsi
+   * Mengembalikan jumlah sayur yang dikonsumsi.
    * @return jumlah sayur yang dikonsumsi
    */
   @Override
   public double countConsumedVeggie() {
-    return weight*getVegRatio();
+    return weight * getVegRatio();
   }
 
   /**
-   * Mengembalikan jumlah daging yang dikonsumsi
+   * Mengembalikan jumlah daging yang dikonsumsi.
    * @return jumlah daging yang dikonsumsi
    */
   @Override
   public double countConsumedMeat() {
-    return weight*getMeatRatio();
+    return weight * getMeatRatio();
   }
 
   /**
@@ -139,7 +143,7 @@ public class Hippopotamus extends Animal implements LandAnimal, WaterAnimal, Her
   }
 
   /**
-   * Mencetak tulisan yang merepresentasi objek pengimplemen sedang berlari
+   * Mencetak tulisan yang merepresentasi objek pengimplemen sedang berlari.
    */
   @Override
   public void run() {
@@ -147,7 +151,7 @@ public class Hippopotamus extends Animal implements LandAnimal, WaterAnimal, Her
   }
 
   /**
-   * Mencetak tulisan yang merepresentasi objek pengimplemen sedang berenang
+   * Mencetak tulisan yang merepresentasi objek pengimplemen sedang berenang.
    */
   @Override
   public void swim() {
