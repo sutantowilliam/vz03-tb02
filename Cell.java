@@ -2,9 +2,9 @@
  * File     : Cell.java
  */
 
-import java.util.*;
 import java.lang.*;
+import java.util.*;
 
-abstract public class Cell implements Renderable {
-  public Cell(){}
+public abstract class Cell implements Renderable {
+  public Cell() {}
 }

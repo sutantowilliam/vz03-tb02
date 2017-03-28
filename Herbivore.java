@@ -3,8 +3,8 @@
  * File : Herbivore.java
  */
 
-import java.util.*;
 import java.lang.*;
+import java.util.*;
 
 public interface Herbivore {
   /**

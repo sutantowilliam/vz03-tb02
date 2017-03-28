@@ -3,12 +3,13 @@
  *  Nama file         : WaterAnimal.java
  */
 
-import java.util.*;
 import java.lang.*;
+import java.util.*;
 
 public interface WaterAnimal {
   /**
-   * Mencetak tulisan yang merepresentasi objek pengimplemen sedang berenang
+   * Mencetak tulisan yang merepresentasi objek pengimplemen sedang 
+   * berenang.
    */
   public void swim();
 }

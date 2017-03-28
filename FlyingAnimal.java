@@ -3,12 +3,12 @@
  *  Nama file         : FlyingAnimal.java
  */
 
-import java.util.*;
 import java.lang.*;
+import java.util.*;
 
 public interface FlyingAnimal {
   /**
-   * Mencetak tulisan yang merepresentasi objek pengimplemen sedang terbang
+   * Mencetak tulisan yang merepresentasi objek pengimplemen sedang terbang.
    */
-  abstract public void fly();
+  public abstract void fly();
 }

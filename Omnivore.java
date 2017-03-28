@@ -3,8 +3,8 @@
  * File : Omnivore.java
  */
 
-import java.util.*;
 import java.lang.*;
+import java.util.*;
 
 public interface Omnivore {
   /**
